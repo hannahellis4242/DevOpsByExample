@@ -8,4 +8,5 @@ There is also a [template file](./template.md) you can use to structure your `By
 
 ## Contents
 
-- [Nginx On Docker](./NginxOnDocker.md)
+- [Nginx On Docker](./Pages/NginxOnDocker.md)
+- [Nginx With Static Html on Docker](./Pages/NginxWithStaticHtmlOnDocker.md)

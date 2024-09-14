@@ -2,8 +2,8 @@
 
 ## Docker
 
-- [NginxOnDocker](./NginxOnDocker.md)
+- [NginxOnDocker](./Pages/NginxOnDocker.md)
 
 ## Nginx
 
-- [NginxOnDocker](./NginxOnDocker.md)
+- [NginxOnDocker](./Pages/NginxOnDocker.md)
