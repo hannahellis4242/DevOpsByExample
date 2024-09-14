@@ -13,6 +13,13 @@ To get a very basic Nginx container running on docker for future experiments.
 
 For this we will use a compose file to keep the manual typing to a minimum.
 
+### Create A Local Config Directory
+
+In your shell type the following
+``` bash
+mkdir nginx-local
+```
+
 ### 1 Example HTML File
 
 Create an example html file, the following will probably be suitable.
@@ -31,7 +38,7 @@ Create an example html file, the following will probably be suitable.
 
 </html>
 ```
-save this as `example.html`
+save this as `example.html` inside the `nginx-local` directory.
 
 ### 2 Docker Compose File
 
@@ -41,11 +48,11 @@ services:
     nginx:
         image: nginx
         ports:
-          - 8080:8080
+          - 8080:80
         volumes:
-          - ./example.html:/usr/share/nginx/html
+          - ./nginx-local:/usr/share/nginx
 ```
-> Notice that we are using the `example.html` we wrote earlier.
+> Notice that we are using the `nginx-local` directory we created earlier.
 
 ### 3 Bring The Service Up
 
@@ -67,7 +74,7 @@ docker compose down
 
 ## Explanation
 
-In this "By Example" we created an html file that we wanted nginx to host for us. To do this we used the nginx docker image rather than host nginx on our own machine. Rather than manually type out commands on the command line to create a container using that image, we used a docker compose file that stored our configuration. The configuration contained a port mapping from port 8080 inside the container to the host port of 8080. It also contained a bind mount volume, which mounted our example.html file inside the container in a file in the `usr/share/nginx/html` directory. This is the directory that nginx uses to look for a default html file if one exists. We then checked on the browser if our configuration was correct and saw that nginx was hosting our example website. After which we tided up after ourselves by bringing our services back down again.
+In this "By Example" we created an html file that we wanted nginx to host for us. To do this we used the nginx docker image rather than host nginx on our own machine. Rather than manually type out commands on the command line to create a container using that image, we used a docker compose file that stored our configuration. The configuration contained a port mapping from port 80 inside the container to the host port of 8080. It also contained a bind mount volume, which mounted our example.html file inside the container in a file in the `usr/share/nginx/html` directory. This is the directory that nginx uses to look for a default html file if one exists. We then checked on the browser if our configuration was correct and saw that nginx was hosting our example website. After which we tided up after ourselves by bringing our services back down again.
 
 ## Experiments
 
