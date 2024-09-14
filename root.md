@@ -6,6 +6,8 @@ This repository is meant to be a collection of notes on DevOps topics from a ver
 
 There is also a [template file](./template.md) you can use to structure your `By Example` page. It is just a guide and don't feel constrained by it.
 
+Additionally there is a [Useful Resources](./UsefulResources.md) page that contains a list of useful resources on various topics.
+
 ## Contents
 
 - [Nginx On Docker](./Pages/NginxOnDocker.md)

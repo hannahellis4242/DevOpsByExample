@@ -2,8 +2,10 @@
 
 ## Docker
 
-- [NginxOnDocker](./Pages/NginxOnDocker.md)
+- [Nginx On Docker](./Pages/NginxOnDocker.md)
+- [Nginx with static html on Docker](./Pages/NginxWithStaticHtmlOnDocker.md)
 
 ## Nginx
 
-- [NginxOnDocker](./Pages/NginxOnDocker.md)
+- [Nginx On Docker](./Pages/NginxOnDocker.md)
+- [Nginx with static html on Docker](./Pages/NginxWithStaticHtmlOnDocker.md)
