@@ -43,7 +43,7 @@ services:
         ports:
           - 8080:8080
         volumes:
-          - ./example.html:usr/share/nginx/html
+          - ./example.html:/usr/share/nginx/html
 ```
 > Notice that we are using the `example.html` we wrote earlier.
 
